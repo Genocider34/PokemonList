@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Short%20Stack:700|Short%20Stack:400");
+
+.classic-gradient {
+  background-image: radial-gradient(
+    farthest-corner circle at 100% 100%,
+    #00dfff 0%,
+    #8c00ea 100%
+  );
+}
+
+body {
+  font-family: "Short Stack";
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: 10px solid yellow;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.name {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
