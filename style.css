@@ -11,22 +11,30 @@
 body {
   font-family: "Short Stack";
   font-weight: 400;
+  font-size: 0.8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   min-height: 100vh;
 }
 
 .pokemon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4);
   width: fit-content;
-  border: 10px solid yellow;
-  background-color: white;
+  height: fit-content;
+  box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.8);
+  background-color: whitesmoke;
   padding: 10px;
   border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.pokemon:hover {
+  border: 1px solid gold;
+  transition: border 100ms ease-in-out;
+  cursor: pointer;
 }
 
 .name {
